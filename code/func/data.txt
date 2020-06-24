@@ -1,0 +1,238 @@
+---------------------------------------------------------------------------------
+Scheduled user memories: 102
+---------------------------------------------------------------------------------
+                       Offset                    Rd
+Addr Data Bd Chp  RAM   (hex) Byte Mode  RW Prt Grp BS Step Memory Name
+---------------------------------------------------------------------------------
+  6   40   0   6  i17 00008000   0    64   R  9  17   0    9 ET5_V1_H1.QTLA%SDL.top.tsm_0.main_instr.cnt1.cnt_cmpval_OPT
+---
+  6   40   0   6  i13 00004000   0    64   R  4   9   0   10 ET5_V1_H1.QTLA%SDL.top.tsm_0.main_instr.cnt2.cnt_cmpval_OPT
+---
+ 14   40   0   6  i48 00020000   0    64   W 27   0   8  103 ET5_V3_H1.QTLA%SDL.top.tsm_0.tracer.trace_ram_OPT
+---
+ 14   64   0   6  i03 00008000   0    64   W  1   0   8   20 ET5_V1_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i36 00038000   0    64   W 17   0   8   24 ET5_V1_H1.QTLA%SDL.top.display.global_display_ram
+---
+ 14   64   0   6  i27 00010000   0    64   W 15   0   8  103 ET5_V1_H1.QTLA%SDL.top.tsm_0.tracer.trace_ram_OPT
+---
+ 14   64   0   6  i45 00034000   0    64   W 20   0   8   22 ET5_V2_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i44 00038000   0    64   W 21   0   8   22 ET5_V2_H1.QTLA%SDL.top.display.global_display_ram
+---
+ 14   64   0   6  i21 00004000   0    64   W  8   0   8   95 ET5_V2_H1.QTLA%SDL.top.tsm_0.tracer.trace_ram_OPT
+---
+ 14   64   0   6  i36 00034000   0    64   W 19   0   8   20 ET5_V3_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i37 00030000   0    64   W 16   0   8   24 ET5_V3_H1.QTLA%SDL.top.display.global_display_ram
+---
+ 14   64   0   6  i02 00008000   0    64   W  0   0   8   20 ET5_V4_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i20 00004000   0    64   W 11   0   8   20 ET5_V4_H1.QTLA%SDL.top.display.global_display_ram
+---
+ 14   64   0   6  i12 00004000   0    64   W  7   0   8   19 ET5_V5_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i11 00004000   0    64   W  6   0   8   16 ET5_V6_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i19 00004000   0    64   W 10   0   8   20 ET5_V7_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i53 00008000   0    64   W 26   0   8   20 ET5_V8_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i44 00034000   0    64   W 23   0   8   22 ET5_V9_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i26 00010000   0    64   W 14   0   8   20 ET5_V10_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i25 00010000   0    64   W 13   0   8   20 ET5_V11_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i37 0002c000   0    64   W 18   0   8   20 ET5_V12_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i24 00010000   0    64   W 12   0   8   20 ET5_V13_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i29 00008000   0    64   W 15   0   8   20 ET5_V14_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i45 00030000   0    64   W 22   0   8   23 ET5_V15_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i13 00000000   0    64   W  5   0   8   16 ET5_V16_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i21 00000000   0    64   W  9   0   8   20 ET5_V17_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i20 00000000   0    64   W  8   0   8   20 ET5_V18_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i12 00000000   0    64   W  4   0   8   17 ET5_V19_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i52 00008000   0    64   W 25   0   8   20 ET5_V20_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i28 00008000   0    64   W 14   0   8   21 ET5_V21_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i51 00008000   0    64   W 24   0   8   20 ET5_V22_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i36 00030000   0    64   W 17   0   8   25 ET5_V23_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i05 00004000   0    64   W  3   0   8   20 ET5_V24_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i44 00030000   0    64   W 21   0   8   25 ET5_V25_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i11 00000000   0    64   W  7   0   8   20 ET5_V26_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i04 00004000   0    64   W  2   0   8   20 ET5_V27_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i19 00000000   0    64   W 11   0   8   21 ET5_V28_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i05 00000000   0    64   W  1   0   8   22 ET5_V29_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i37 00028000   0    64   W 16   0   8   25 ET5_V30_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i50 00008000   0    64   W 27   0   8   20 ET5_V31_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   64   0   6  i04 00000000   0    64   W  0   0   8   22 ET5_V32_H1.QTLA%SDL.top.display.args_display_ram
+---
+ 14   16   0   6  i50 0000c000   0    32   W 24   0   4   58 ET5_V1_H1.QTLA%SDL.top.tsm_0.main_instr.tsm_display_ram
+---
+ 15   64   0   6  i10 00000000   0    64   W  6   0   8   23 ET5_V1_H1.QTLA%SDL.top.stwave_tstamp_ram
+---
+ 15   64   0   6  i45 00028000   0    64   W 20   0   8  101 ET5_V1_H1.QTLA%SDL.top.stwave_0_ram
+---
+ 15   64   0   6  i03 00000000   0    64   W  3   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_1_ram
+---
+ 15   64   0   6  i29 00000000   0    64   W 13   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_2_ram
+---
+ 15   64   0   6  i18 00000000   0    64   W 10   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_3_ram
+---
+ 15   64   0   6  i49 00008000   0    64   W 26   0   8   13 ET5_V1_H1.QTLA%SDL.top.stwave_4_ram
+---
+ 15   64   0   6  i37 00020000   0    64   W 19   0   8   16 ET5_V1_H1.QTLA%SDL.top.stwave_5_ram
+---
+ 15   64   0   6  i53 00000000   0    64   W 25   0   8   13 ET5_V1_H1.QTLA%SDL.top.stwave_6_ram
+---
+ 15   64   0   6  i28 00000000   0    64   W 12   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_7_ram
+---
+ 15   64   0   6  i17 00000000   0    64   W  9   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_8_ram
+---
+ 15   64   0   6  i02 00000000   0    64   W  2   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_9_ram
+---
+ 15   64   0   6  i09 00000000   0    64   W  5   0   8   18 ET5_V1_H1.QTLA%SDL.top.stwave_10_ram
+---
+ 15   64   0   6  i52 00000000   0    64   W 24   0   8   13 ET5_V1_H1.QTLA%SDL.top.stwave_11_ram
+---
+ 15   64   0   6  i51 00000000   0    64   W 27   0   8   15 ET5_V1_H1.QTLA%SDL.top.stwave_12_ram
+---
+ 15   64   0   6  i45 00020000   0    64   W 23   0   8   17 ET5_V1_H1.QTLA%SDL.top.stwave_13_ram
+---
+ 15   64   0   6  i50 00000000   0    64   W 26   0   8   14 ET5_V1_H1.QTLA%SDL.top.stwave_14_ram
+---
+ 15   64   0   6  i49 00000000   0    64   W 25   0   8   15 ET5_V1_H1.QTLA%SDL.top.stwave_15_ram
+---
+ 16   40   0   6  i08 00000000   0    64   R  4   8   0   59 ET5_V2_H1.QTLA%SDL.top.tsm_0.main_instr.tsm_lut_OPT
+---
+ 16   64   0   6  i27 00000000   0    64   W 15   0   8   10 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i16 00000000   0    64   R  8  16   0   48 ET5_V1_H1.QTLA%SDL.top.tsm_0.main_instr.tsm_lut_OPT
+---
+ 16   64   0   6  i26 00000000   0    64   W 14   0   8    9 ET5_V2_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i36 00020000   0    64   W 18   0   8   14 ET5_V3_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i44 00020000   0    64   W 22   0   8   18 ET5_V4_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i01 00000000   0    64   W  1   0   8   13 ET5_V5_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i00 00000000   0    64   W  0   0   8   13 ET5_V6_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i25 00000000   0    64   W 13   0   8    8 ET5_V7_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i24 00000000   0    64   W 12   0   8    8 ET5_V8_H1.QTLA%SDL.top.run_stop_ctl.debug_trace.debug_ram
+---
+ 16   64   0   6  i61 00020000   0    64   R 31  56   0    2 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl._sdlcmds
+ 16   64   0   6  i61 00020000   0    64   W 28   0   8   32 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl.U2340
+ 16   64   0   6  i61 00020000   0    64   W 29   0   8   41 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl.U2341
+ 16   64   0   6  i61 00020000   0    64   R 30  57   0   42 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl.U2342
+ 16   64   0   6  i61 00020000   0    64   W 31   0   8  104 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl.U2343
+ 16   64   0   6  i61 00020000   0    64   W 28   0   8  106 ET5_V1_H1.QTLA%SDL.top.run_stop_ctl.U2344
+---
+ 18   32   0   6  i60 00020000   0    32   W 30   0   4   18 ET5_V1_H1.\genblk1[0].u1 .mem
+---
+ 18   32   0   6  i37 00000000   0    32   W 17   0   4   19 ET5_V1_H1.\genblk1[1].u1 .mem
+---
+ 18   32   0   6  i59 00000000   0    32   W 31   0   4   19 ET5_V1_H1.\genblk1[2].u1 .mem
+---
+ 18   32   0   6  i57 00000000   0    32   W 29   0   4   20 ET5_V1_H1.\genblk1[3].u1 .mem
+---
+ 18   32   0   6  i42 00000000   0    32   W 22   0   4   17 ET5_V1_H1.\genblk1[4].u1 .mem
+---
+ 18   32   0   6  i33 00000000   0    32   W 17   0   4   20 ET5_V1_H1.\genblk1[5].u1 .mem
+---
+ 18   32   0   6  i41 00000000   0    32   W 21   0   4   26 ET5_V1_H1.\genblk1[6].u1 .mem
+---
+ 18   32   0   6  i56 00000000   0    32   W 28   0   4   19 ET5_V1_H1.\genblk1[7].u1 .mem
+---
+ 18   32   0   6  i32 00000000   0    32   W 16   0   4   20 ET5_V1_H1.\genblk1[8].u1 .mem
+---
+ 18   32   0   6  i40 00000000   0    32   W 20   0   4   25 ET5_V1_H1.\genblk1[9].u1 .mem
+---
+ 18   32   0   6  i35 00020000   0    32   W 17   0   4   18 ET5_V1_H1.\genblk1[10].u1 .mem
+---
+ 18   32   0   6  i43 00020000   0    32   W 21   0   4   21 ET5_V1_H1.\genblk1[11].u1 .mem
+---
+ 18   32   0   6  i34 00020000   0    32   W 16   0   4   18 ET5_V1_H1.\genblk1[12].u1 .mem
+---
+ 18   32   0   6  i42 00020000   0    32   W 20   0   4   20 ET5_V1_H1.\genblk1[13].u1 .mem
+---
+ 18   32   0   6  i33 00020000   0    32   W 19   0   4   18 ET5_V1_H1.\genblk1[14].u1 .mem
+---
+ 18   32   0   6  i41 00020000   0    32   W 23   0   4   20 ET5_V1_H1.\genblk1[15].u1 .mem
+---
+ 18   32   0   6  i32 00020000   0    32   W 18   0   4   18 ET5_V1_H1.\genblk1[16].u1 .mem
+---
+ 18   32   0   6  i40 00020000   0    32   W 22   0   4   16 ET5_V1_H1.\genblk1[17].u1 .mem
+---
+ 18   32   0   6  i59 00020000   0    32   W 29   0   4   18 ET5_V1_H1.\genblk1[18].u1 .mem
+---
+ 18   32   0   6  i48 00000000   0    32   W 24   0   4   19 ET5_V1_H1.\genblk1[19].u1 .mem
+---
+ 18   32   0   6  i45 00000000   0    32   W 21   0   4   20 ET5_V1_H1.\genblk1[20].u1 .mem
+---
+ 18   32   0   6  i58 00020000   0    32   W 28   0   4   18 ET5_V1_H1.\genblk1[21].u1 .mem
+---
+ 18   32   0   6  i57 00020000   0    32   W 31   0   4   18 ET5_V1_H1.\genblk1[22].u1 .mem
+---
+ 18   32   0   6  i56 00020000   0    32   W 30   0   4   19 ET5_V1_H1.\genblk1[23].u1 .mem
+---
+ 18   32   0   6  i61 00000000   0    32   W 29   0   4   19 ET5_V1_H1.\genblk1[24].u1 .mem
+---
+ 18   32   0   6  i36 00000000   0    32   W 16   0   4   19 ET5_V1_H1.\genblk1[25].u1 .mem
+---
+ 18   32   0   6  i60 00000000   0    32   W 28   0   4   20 ET5_V1_H1.\genblk1[26].u1 .mem
+---
+ 18   32   0   6  i44 00000000   0    32   W 20   0   4   21 ET5_V1_H1.\genblk1[27].u1 .mem
+---
+ 18   32   0   6  i35 00000000   0    32   W 19   0   4   19 ET5_V1_H1.\genblk1[28].u1 .mem
+---
+ 18   32   0   6  i43 00000000   0    32   W 23   0   4   21 ET5_V1_H1.\genblk1[29].u1 .mem
+---
+ 18   32   0   6  i58 00000000   0    32   W 30   0   4   23 ET5_V1_H1.\genblk1[30].u1 .mem
+---
+ 18   32   0   6  i34 00000000   0    32   W 18   0   4   19 ET5_V1_H1.\genblk1[31].u1 .mem
+---
+---------------------------------------------------------------------------------
+---------------- End of List ----------------------------------------------------
+---------------------------------------------------------------------------------
+
+EXTRAM peek & refresh windows
+
+Chip 6 x00 sysbus windows open/close steps:
+
+Chip 6 x00 refresh steps
+
+LPDDR peek & refresh windows
+
+Chip 6 lpddr 0 sysbus windows open/close steps:
+
+Chip 6 lpddr 1 sysbus windows open/close steps:
+
+Chip 6 lpddr 2 sysbus windows open/close steps:
+
+Chip 6 lpddr 3 sysbus windows open/close steps:
+
+Chip 6 refresh steps
+
+ Not implemented yet
