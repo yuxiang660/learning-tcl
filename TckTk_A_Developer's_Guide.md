@@ -48,6 +48,7 @@
    - [Excepting Handling in Tcl](#excepting-handling-in-tcl)
    - [Examining the State of the Tcl Interpreter](#examining-the-state-of-the-tcl-interpreter)
    - [Loading Code from a Script File](#loading-code-from-a-script-file)
+- [Procedure Techniques](#procedure-techniques)
 
 <!-- /TOC -->
 
@@ -413,3 +414,8 @@ Provide information about the interpreter state, refer to [example: info.tcl](./
 
 ## Loading Code from a Script File
 The `source` command loads a file into an existing Tcl script. It is similar to the `#include` in C, the `source` in C-shell programming.
+
+`source fileName`
+
+# Procedure Techniques
+
