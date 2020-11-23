@@ -35,6 +35,8 @@
       - [Close a Channel](#close-a-channel)
    - [Sockets](#sockets)
       - [Using a Client Socket](#using-a-client-socket)
+      - [Controlling Data Flow](#controlling-data-flow)
+      - [Server Sockets](#server-sockets)
 
 <!-- /TOC -->
 
@@ -311,7 +313,29 @@ All I/O in Tcl is done through channels. A channel is an I/O device abstraction 
 Two types of sockets:
 * Client socket (very much like a connection to a file or pipe)
 * Server socket (waits for a client to connect to it)
+
 ### Using a Client Socket
-* [Example](./code/socket/echo-client.tcl)
+[Example: echo-client.tcl](./code/socket/echo-client.tcl)
 * Start server: `python3 echo-server.py`
 * Start client: `tclsh echo-client.tcl`
+
+### Controlling Data Flow
+`fconfigure channelID ?name? ?value?`
+* name
+   * -blocking boolean
+   * -buffering newValue
+
+`flush channelID`
+
+`fileevent channel direction script`
+
+### Server Sockets
+The server-side socket command registers a script to be evaluated when a client socket requests a connection to the server.
+
+`socket -server script port`
+
+[Example: echo-server.tcl](./code/socket/echo-server.tcl)
+* `tclsh echo-server.tcl`
+* `tclsh echo-client.tcl`
+   * client send `COMMAND` to server, and server send back `COMMAND` to client
+
