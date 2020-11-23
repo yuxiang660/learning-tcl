@@ -49,6 +49,13 @@
    - [Examining the State of the Tcl Interpreter](#examining-the-state-of-the-tcl-interpreter)
    - [Loading Code from a Script File](#loading-code-from-a-script-file)
 - [Procedure Techniques](#procedure-techniques)
+   - [Arguments to Procedures](#arguments-to-procedures)
+      - [Variable Number of Arguments to a Procedure](#variable-number-of-arguments-to-a-procedure)
+      - [Default Values for Procedure Arguments](#default-values-for-procedure-arguments)
+   - [Renaming or Deleting Commands](#renaming-or-deleting-commands)
+   - [Getting Information About Procedures](#getting-information-about-procedures)
+   - [Evaluating a String as a Tcl Command](#evaluating-a-string-as-a-tcl-command)
+   - [Working with Global and Local Scopes](#working-with-global-and-local-scopes)
 
 <!-- /TOC -->
 
@@ -418,4 +425,73 @@ The `source` command loads a file into an existing Tcl script. It is similar to 
 `source fileName`
 
 # Procedure Techniques
+Tcl supports the common programming concept of subroutines -- procedures that accept a given number of arguments and return one or more values.
+Tcl also supports procedures with variable numbers of arguments and procedures with arguments that have default values.
+
+## Arguments to Procedures
+### Variable Number of Arguments to a Procedure
+[Example: variable_args.tcl](./code/proc/variable_args.tcl)
+* The last argument must be `args`
+```tcl
+proc showArgs {first args} {
+   puts "first: $first"
+   puts "args: $args"
+}
+```
+### Default Values for Procedure Arguments
+```tcl
+proc showDefaults {firstArg {numberArg 0} {stringArg {default string}}} {
+   puts "firstArg: $firstArg"
+   puts "numberArg: $numberArg"
+   puts "stringArg: $stringArg"
+}
+# Output:
+# firstArg: firstArgument
+# numberArg: 0
+# stringArg: default string
+showDefaults firstArgument
+```
+
+## Renaming or Deleting Commands
+[Example: rename.tcl](./code/proc/rename.tcl)
+```tcl
+proc alpha {} {
+return "This is the alpha proc"
+}
+# Example Script
+puts "Invocation of procedure alpha: [alpha]"
+rename alpha beta
+catch alpha rtn
+puts "Invocation of alpha after rename: $rtn"
+puts "Invocation of procedure beta: [beta]"
+rename beta ""
+beta
+```
+
+## Getting Information About Procedures
+```tcl
+# Check to see if md5 command is defined. If not, load a
+# Tcl version
+if {[string match [info commands md5] ""]} {
+   source "md5.tcl"
+}
+```
+
+## Evaluating a String as a Tcl Command
+The `eval` command concatenates its arguments into a string and then evaluates that string as if it were text in a script file.
+* the command that is evaluted by `eval` will lose one level of grouping.
+```tcl
+set cmd(0) {set a 1}
+set cmd(1) {puts "start value of A is: $a"}
+set cmd(2) {incr a 3}
+set cmd(3) {puts "end value of A is: $a"}
+for {set i 0} {$i < 4} {incr i} {
+   eval $cmd($i)
+}
+# Script Output
+# start value of A is: 1
+# end value of A is: 4
+```
+
+## Working with Global and Local Scopes
 
