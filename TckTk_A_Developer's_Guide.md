@@ -37,6 +37,13 @@
       - [Using a Client Socket](#using-a-client-socket)
       - [Controlling Data Flow](#controlling-data-flow)
       - [Server Sockets](#server-sockets)
+- [Using Strings and Lists](#using-strings-and-lists)
+   - [Converting a String into a List](#converting-a-string-into-a-list)
+   - [Examining the List with a for Loop](#examining-the-list-with-a-for-loop)
+   - [Using the foreach Command](#using-the-foreach-command)
+   - [Using string match Instead of string first](#using-string-match-instead-of-string-first)
+   - [Variable Scope](#variable-scope)
+      - [Global Information Variables](#global-information-variables)
 
 <!-- /TOC -->
 
@@ -343,4 +350,44 @@ This script will have three arguments appended to the script before it is evalua
 * `tclsh echo-server.tcl`
 * `tclsh echo-client.tcl`
    * client send `COMMAND` to server, and server send back `COMMAND` to client
+
+# Using Strings and Lists
+## Converting a String into a List
+`set urlList [split $urls "\n"]`
+
+## Examining the List with a for Loop
+```tcl
+for {set pos 0} {$pos < [llength $urlList]} {incr pos} {
+   if {[string first "Noumena" [lindex $urlList $pos]] >= 0} {
+      puts "NOUMENA PAGE: \n [lindex $urlList $pos]"
+   }
+}
+```
+
+## Using the foreach Command
+```tcl
+foreach item $urlList {
+   if {[string first "Noumena" $item] >= 0} {
+      puts "NOUMENA PAGE: \n $item"
+   }
+}
+```
+
+## Using string match Instead of string first
+```tcl
+foreach item $urlList {
+   if {[string match {*[Nn]oumena*} $item] >= 0} {
+      puts "NOUMENA PAGE: \n $item"
+   }
+}
+```
+
+## Variable Scope
+A variable declared and used within a proc can be accessed only within that proc, unless it is made global with the `global` command.
+### Global Information Variables
+* argv - A list of command line arguments.
+* argc - The number of list elements in argv.
+* env - An associative array of environment variables.
+   * `puts $env(PATH)`
+   * `array get env`
 
