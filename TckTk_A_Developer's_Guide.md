@@ -333,6 +333,11 @@ Two types of sockets:
 The server-side socket command registers a script to be evaluated when a client socket requests a connection to the server.
 
 `socket -server script port`
+* script<br>
+This script will have three arguments appended to the script before it is evaluated:
+   * channel
+   * IP Address
+   * port
 
 [Example: echo-server.tcl](./code/socket/echo-server.tcl)
 * `tclsh echo-server.tcl`
