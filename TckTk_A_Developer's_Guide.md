@@ -44,6 +44,10 @@
    - [Using string match Instead of string first](#using-string-match-instead-of-string-first)
    - [Variable Scope](#variable-scope)
       - [Global Information Variables](#global-information-variables)
+- [Building Complex Data Structures with Lists and Arrays](#building-complex-data-structures-with-lists-and-arrays)
+   - [Excepting Handling in Tcl](#excepting-handling-in-tcl)
+   - [Examining the State of the Tcl Interpreter](#examining-the-state-of-the-tcl-interpreter)
+   - [Loading Code from a Script File](#loading-code-from-a-script-file)
 
 <!-- /TOC -->
 
@@ -390,4 +394,22 @@ A variable declared and used within a proc can be accessed only within that proc
 * env - An associative array of environment variables.
    * `puts $env(PATH)`
    * `array get env`
+
+# Building Complex Data Structures with Lists and Arrays
+## Excepting Handling in Tcl
+`catch script ?varName?`
+
+`error informationalString ?Info? ?Code?`
+
+## Examining the State of the Tcl Interpreter
+`info subCommand arguments`
+Provide information about the interpreter state, refer to [example: info.tcl](./code/interpreter/info.tcl)
+* subCommand
+   * exists varName - Returns True if a variable has been defined.
+   * proc globPattern - Returns a list of procedure names that match the glob pattern.
+   * body procName - Returns the body of a procedure.
+   * args procName - Returns the names of the arguments for a procedure.
+   * nameofexecutable - Returns the full path name of the binary file from which the application was invoked.
+
+## Loading Code from a Script File
 
