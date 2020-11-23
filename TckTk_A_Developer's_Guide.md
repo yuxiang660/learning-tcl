@@ -56,6 +56,7 @@
    - [Getting Information About Procedures](#getting-information-about-procedures)
    - [Evaluating a String as a Tcl Command](#evaluating-a-string-as-a-tcl-command)
    - [Working with Global and Local Scopes](#working-with-global-and-local-scopes)
+      - [Global and Local Scope](#global-and-local-scope)
 
 <!-- /TOC -->
 
@@ -494,4 +495,10 @@ for {set i 0} {$i < 4} {incr i} {
 ```
 
 ## Working with Global and Local Scopes
+The `upvar` and `uplevel` commands allow procedures to interact with higher-level scopes.
+### Global and Local Scope
+* `upvar ?level? varName1 localName ?Name2? ?localName2?`<br>
+   The `upvar` command will link a local variable to one in a previous (higher) stack scope, refer to the [example](./code/proc/scope.tcl)
+* `uplevel`<br>
+   Refer to the [example](./code/proc/scope2.tcl)
 
