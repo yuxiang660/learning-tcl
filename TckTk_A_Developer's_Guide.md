@@ -412,4 +412,4 @@ Provide information about the interpreter state, refer to [example: info.tcl](./
    * nameofexecutable - Returns the full path name of the binary file from which the application was invoked.
 
 ## Loading Code from a Script File
-
+The `source` command loads a file into an existing Tcl script. It is similar to the `#include` in C, the `source` in C-shell programming.
