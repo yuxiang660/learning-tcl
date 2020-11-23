@@ -57,6 +57,7 @@
    - [Evaluating a String as a Tcl Command](#evaluating-a-string-as-a-tcl-command)
    - [Working with Global and Local Scopes](#working-with-global-and-local-scopes)
       - [Global and Local Scope](#global-and-local-scope)
+   - [Making a Tcl Object](#making-a-tcl-object)
 
 <!-- /TOC -->
 
@@ -502,3 +503,5 @@ The `upvar` and `uplevel` commands allow procedures to interact with higher-leve
 * `uplevel`<br>
    Refer to the [example](./code/proc/scope2.tcl)
 
+## Making a Tcl Object
+[Example:fruit.tcl](./code/object/fruit.tcl)
