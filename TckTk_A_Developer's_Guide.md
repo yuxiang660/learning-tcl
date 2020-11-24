@@ -63,6 +63,7 @@
       - [Namespace Export and Import](#namespace-export-and-import)
    - [Packages](#packages)
       - [Internal Details: Files and Variables Used with Packages](#internal-details-files-and-variables-used-with-packages)
+   - [Modules](#modules)
 
 <!-- /TOC -->
 
@@ -579,3 +580,12 @@ The `package provide` command defines the name and version of the package that i
 `package require ?-exact? packageName ?versionNum?`
 
 The `package require` command declares that this sript may use procedures defined in a particular package.
+
+## Modules
+A Tcl script that is designed to be nested within another namespace will be referred to as a module. A `module` is a package that conforms to following rules.
+* Modules are pure Tcl scripts, not object code.
+* Modules are written to be namespace independent.
+* Modules use package provide to identifiy themselves as packages.
+
+`module load ?-policy policyList? packageName packageRevision`
+
