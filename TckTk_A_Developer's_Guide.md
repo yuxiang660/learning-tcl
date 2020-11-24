@@ -58,6 +58,11 @@
    - [Working with Global and Local Scopes](#working-with-global-and-local-scopes)
       - [Global and Local Scope](#global-and-local-scope)
    - [Making a Tcl Object](#making-a-tcl-object)
+- [Namespaces and Packages](#namespaces-and-packages)
+   - [Namespace](#namespace)
+      - [Namespace Export and Import](#namespace-export-and-import)
+   - [Packages](#packages)
+      - [Internal Details: Files and Variables Used with Packages](#internal-details-files-and-variables-used-with-packages)
 
 <!-- /TOC -->
 
@@ -505,3 +510,72 @@ The `upvar` and `uplevel` commands allow procedures to interact with higher-leve
 
 ## Making a Tcl Object
 [Example:fruit.tcl](./code/object/fruit.tcl)
+
+# Namespaces and Packages
+The `package` command groups a set of procedures that may be in separate files into a single logical entity.The `package` command can load both Tcl script files and binary shared libraries or DLLs.
+## Namespace
+```tcl
+# Define namespace example with two independent procedures.
+namespace eval example {
+   proc proc1 {} {puts "proc1"}
+   proc proc2 {} {puts "proc2"}
+}
+```
+### Namespace Export and Import
+`namespace export pattern1 ?patternN...?`
+
+The namespace `export` command defines the procedures within one namespace that can be imported to other scopes.
+
+`namespace import ?-force? ?pattern1 patternN...?`
+
+The nmespace `import` command imports a procedure from one namespace into the current namespace.
+
+```tcl
+# Create a namespace named ‘demo’
+namespace eval demo {
+   namespace export publicProc publicAPI
+   proc PrivateProc {} {
+      # Do stuff
+      ...
+   }
+   proc publicProc {} {
+      # Do other stuff
+      ...
+   }
+}
+proc demo::publicAPI {} {...}
+# import all public procedures.
+namespace import demo::pub*
+```
+
+`namespace children ?namespaceID? ?pattern?`
+
+The namespace `children` command returns a list of the namespaces that are visible from a scope.
+
+`variable varName ?value? ?varNameN? ?valueN?`
+
+The `variable` command declares that a variable exists and will be retained within a namespace. Refer to [example:var.tcl](./code/namespace/var.tcl)
+
+Note that the syntax for the variable command is different from the `global` command. The `variable` command supports setting an initial value for a variable, whereas the `global` command does not. Refer to [example:import.tcl](./code/namespace/import.tcl)
+
+## Packages
+The namespace command provides encapsulation functionality, whereas the package command provides library functionality.
+Refer to the [example](./code/package) from the [website](https://www.tutorialspoint.com/tcl-tk/tcl_packages.htm).
+
+### Internal Details: Files and Variables Used with Packages
+* [pkgIndex.tcl](./code/package/helloworld/pkgIndex.tcl)<br>
+This file contains a list of procedures defined by the pakages in the directory with it. This file is created with the `pkg_mkIndex` command.
+* `auto_path` global variable<br>
+The `auto_path` variable contains a list of the directories that should be searched for package index files.
+
+`pkg_mkIndex ?-option? dir pattern ?pattern?`
+
+The `pkg_mkIndex` command scans the files identified by the patterns for package provide commands.
+
+`package provide packageName ?version?`
+
+The `package provide` command defines the name and version of the package that includes these procedures.
+
+`package require ?-exact? packageName ?versionNum?`
+
+The `package require` command declares that this sript may use procedures defined in a particular package.
